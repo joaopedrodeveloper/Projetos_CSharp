@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidaCPF_GUI", "ValidaCPF_GUI\ValidaCPF_GUI.csproj", "{28964C23-74D3-4160-9998-35C5FA8C6CF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28964C23-74D3-4160-9998-35C5FA8C6CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28964C23-74D3-4160-9998-35C5FA8C6CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28964C23-74D3-4160-9998-35C5FA8C6CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28964C23-74D3-4160-9998-35C5FA8C6CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EFC5546-CE2C-4542-AFED-68CD19445D70}
+	EndGlobalSection
+EndGlobal
