@@ -80,8 +80,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ValidaCNPJ\GeraCnpjValido.cs" />
+    <Compile Include="ValidaCPF\GeraCpfValido.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidaCNPJ\ValidacaoCNPJ.cs" />
     <Compile Include="ValidaCPF\ValidacaoCPF.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
