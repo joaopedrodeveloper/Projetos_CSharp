@@ -13,9 +13,9 @@ namespace ValidaCNPJ
 
         private string RandCNPJ()
         {
-            this.Aleatorio = Convert.ToString(rand.NextInt64(100000000000, 999999999999));
+            this.Aleatorio = Convert.ToString(rand.NextInt64(10000000, 99999999));
 
-            return this.Aleatorio;
+            return this.Aleatorio + "0001";
         }
 
         public string CnpjValida() 
@@ -29,7 +29,7 @@ namespace ValidaCNPJ
 
         private string CnpjValidoFormatado(string cnpjGerado)
         {
-            return Convert.ToUInt64(cnpjGerado).ToString(@"");
+            return Convert.ToUInt64(cnpjGerado).ToString(@"00\.000\.000\/0000\-00");
         }
     }
 }
