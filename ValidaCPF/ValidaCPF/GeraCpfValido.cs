@@ -9,21 +9,20 @@ namespace ValidaCPF
     internal class GeraCpfValido
     {
         Random rand = new Random();
-        public double Aleatorio { get; set; }
+        private string Aleatorio { get; set; }
 
         public string RandCPF()
         {
-            Aleatorio = rand.NextInt64(100000000, 999999999);
-            string aleatorioStr = Convert.ToString(Aleatorio);
+            Aleatorio = Convert.ToString(rand.NextInt64(100000000, 999999999));
 
-            return aleatorioStr;
+            return Aleatorio;
         }
 
-        public string RandCPFMaior() 
+        public string RandCPFInvalido() 
         {
-            Aleatorio = rand.NextInt64(10000000000, 99999999999);
-            string aleatorioStr = Convert.ToString(Aleatorio);
-            return this.CpfValidoFormatado(aleatorioStr);
+            Aleatorio = Convert.ToString(rand.NextInt64(10000000000, 99999999999));
+
+            return this.CpfValidoFormatado(Aleatorio);
         }
 
         public string CpfValido()

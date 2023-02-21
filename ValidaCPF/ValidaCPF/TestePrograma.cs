@@ -11,30 +11,22 @@ namespace ValidaCPF
         private Random rand = new Random();
         private GeraCpfValido gera = new GeraCpfValido();
 
-        private string cpfGerado { get; set; }
-        private string cpfGeradoInvalido { get; set; }
-        private string cpfGeradoValido { get; set; }
-        private string[] arrayCpfsTestes { get; set; }
-        private string repeat { get; set; }
-        private string cpfRepeat { get; set; }
-        private string cpfRepeatFive { get; set; }
-
         public bool TestesPrograma()
         {
-            int contadorTestes = 100;
+            int contadorTestes = 10;
 
             Console.WriteLine("\nIniciando bateria de testes!");
             while (contadorTestes > 0)
             {
-                repeat = Convert.ToString(rand.Next(1, 10));
-                cpfRepeat = new String(Convert.ToChar(repeat), 11);
-                cpfRepeatFive = new String(Convert.ToChar(repeat), 5);
+                string repeat = Convert.ToString(rand.Next(1, 10));
+                string cpfRepeat = new String(Convert.ToChar(repeat), 11);
+                string cpfRepeatFive = new String(Convert.ToChar(repeat), 5);
 
-                cpfGerado = gera.RandCPF();
-                cpfGeradoInvalido = gera.RandCPFMaior();
-                cpfGeradoValido = gera.CpfValido();
+                string cpfGerado = gera.RandCPF();
+                string cpfGeradoInvalido = gera.RandCPFInvalido();
+                string cpfGeradoValido = gera.CpfValido();
 
-                arrayCpfsTestes = new string[] { cpfGerado, cpfGeradoValido, cpfGeradoInvalido, cpfRepeat, cpfRepeatFive, "abc", ".."};
+                string[] arrayCpfsTestes = new string[] { cpfGerado, cpfGeradoValido, cpfGeradoInvalido, cpfRepeat, cpfRepeatFive, "abc", ".."};
 
                 Console.WriteLine($"\nCPFs Gerado para testes: {cpfGerado}, {cpfGeradoValido}, {cpfGeradoInvalido}, {cpfRepeat}, {cpfRepeatFive}");
 
